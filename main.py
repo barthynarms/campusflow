@@ -1,9 +1,4 @@
-"""CampusFlow CLI entry point.
 
-main.py only shows the menu, collects typed input and calls the functions in the
-campusflow package. Business rules live in campusflow/, so they can be unit-tested
-without input().
-"""
 from campusflow import workflow
 from campusflow.reports import build_report, format_report
 from campusflow.storage import StorageError, load_tickets, save_tickets
