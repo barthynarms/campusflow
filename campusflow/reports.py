@@ -3,11 +3,7 @@ PRIORITIES = ["critical", "high", "medium", "low"]
 
 
 def build_report(tickets):
-    """Return total tickets plus counts by status and priority.
 
-    Every status and priority appears in the result, even with a count of 0,
-    so an empty ticket list gives a correct report instead of an error.
-    """
     by_status = {status: 0 for status in STATUSES}
     by_priority = {priority: 0 for priority in PRIORITIES}
 
