@@ -14,8 +14,6 @@ class ValidationError(ValueError):
     """Raised when ticket input is invalid."""
 
 
-# ---------- validation / normalisation ----------
-
 def validate_title(title):
     if not isinstance(title, str) or not title.strip():
         raise ValidationError("Title must not be blank.")
