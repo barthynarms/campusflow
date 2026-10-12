@@ -1,4 +1,3 @@
-
 from campusflow import workflow
 from campusflow.reports import build_report, format_report
 from campusflow.storage import StorageError, load_tickets, save_tickets
@@ -18,7 +17,7 @@ def _save(tickets):
 # ---------- F1: create ----------
 
 def handle_create_ticket(tickets):
-    print("\n--- Create ticket ---")
+    print("\n" + "-" * 5 + " Create ticket " + "-" * 5)
     title = input("Title: ")
     category = input("Category (Network/Hardware/Software/Other): ")
     urgency = input("Urgency (low/medium/high): ")
